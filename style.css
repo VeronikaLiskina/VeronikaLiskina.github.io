@@ -65,6 +65,8 @@ blockquote {
 .container {
     display: grid;
     gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Адаптивные колонки */
+    justify-items: center; /* Центрирование внутри ячеек */
 }
 
 section h2,
@@ -91,15 +93,7 @@ section h3 {
     font-size: clamp(1rem, 2vw, 1.2rem);
 }
 
-section img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+
 
 footer {
     background: linear-gradient(135deg, #d8a0d6, #e9cce8);
@@ -113,6 +107,26 @@ footer p {
     margin: 0;
 }
 
+.container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Адаптивные колонки */
+    justify-items: center; /* Центрирование внутри ячеек */
+}
+
+section img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 769px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr); /* 3 колонки на ПК */
+    }
+}
 /* Responsive styles */
 @media (max-width: 480px) {
     nav ul {
