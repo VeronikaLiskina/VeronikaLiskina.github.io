@@ -138,13 +138,22 @@ section img {
     }
     section h2,h3{
         width: 300pt;
+        font: 4.5rem/.95 'Oswald', sans-serif;
+
+    }
+    header .site-header h1 {
+        font: 700 4rem/1 'Oswald', sans-serif;
     }
     section img{
-        width: 300pt;
+        width: 100pt;
+        height:120pt;
     }
 } 
 
 @media (max-width: 768px) {
+    .body{
+        font-size: 40px;  
+    }
     main {
         padding: 10px;
     }
@@ -154,7 +163,9 @@ section img {
         align-items: center;
         gap: 10px;
     }
-
+    nav ul li a {
+        font-size: 3rem; 
+    }
     .intro {
         padding: 15px;
     }
