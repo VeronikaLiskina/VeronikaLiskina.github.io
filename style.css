@@ -135,7 +135,15 @@ footer p {
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
-   
+    .container p {
+        font-size: 2rem;
+     }
+     .intro{
+         font-size: 1.8rem;
+     }
+     blockquote {
+         font-size: 2rem;
+     }
     .body{
         display:inline-block;
     }
