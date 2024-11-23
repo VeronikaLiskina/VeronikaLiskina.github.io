@@ -62,8 +62,7 @@ blockquote {
 }
 
 .container {
-    display: flexbox;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: inline-block;
     gap: 20px;
 }
 
@@ -153,10 +152,15 @@ footer p {
 }
 
 @media (min-width: 1200px) {
-    body {
-        font-size: 40pt;
+    .container p {
+       font-size: 2rem;
     }
-
+    .intro{
+        font-size: 1.8rem;
+    }
+    blockquote {
+        font-size: 2rem;
+    }
     main {
         padding: 40px;
     }
