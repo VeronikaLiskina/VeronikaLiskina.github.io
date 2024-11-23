@@ -63,7 +63,7 @@ blockquote {
 }
 
 .container {
-    display: grid;
+    display: flexbox;
     gap: 20px;
 }
 
