@@ -209,26 +209,34 @@ h3 + .image-row img {
 
 @media (min-width: 769px) and (max-width: 1199px) {
     section img {
-        max-width: 300px;
+        max-width: 100%; /* Изображения не выходят за пределы контейнера */
+    }
+
+    .container {
+        display: grid; /* Оставляем grid */
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Более гибкое расположение колонок */
+        gap: 20px;
     }
 
     .container p {
-        font-size: 1.6rem;
+        font-size: 1.6rem; /* Размер шрифта для среднего экрана */
     }
 
     .intro,
     blockquote {
-        font-size: 1.7rem;
+        font-size: 1.7rem; /* Размер шрифта для блоков */
     }
 
     nav ul li a {
         font-size: 1.7rem;
     }
+
     h3 + .image-row {
-        flex-direction: column; /* Располагаем изображения вертикально */
-        gap: 10px; /* Уменьшаем отступы */
+        flex-direction: row; /* Картинки в ряд, если есть достаточно места */
+        gap: 15px; /* Отступы между изображениями */
     }
 }
+
 
 @media (min-width: 1200px) {
     main {
