@@ -163,13 +163,36 @@ h3 + .image-row img {
         flex-direction: column; /* Располагаем изображения вертикально */
         gap: 8px; /* Уменьшаем отступы */
     }
+    .container {
+        display: block; /* Убираем grid */
+    }
+
+    .image-row img {
+        width: 100%;
+        height: auto;
+    }
+
+    figure {
+        margin: 0 auto;
+    }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
     .container p {
         font-size: 1.5rem;
     }
+    .container {
+        display: block; /* Убираем grid */
+    }
 
+    .image-row img {
+        width: 100%;
+        height: auto;
+    }
+
+    figure {
+        margin: 0 auto;
+    }
     .intro,
     blockquote {
         font-size: 1.4rem;
