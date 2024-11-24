@@ -250,6 +250,7 @@ h3 + .image-row img {
 
     nav ul li a {
         font-size: 2rem;
+        padding-right:15px;
     }
 
     .container {
@@ -263,4 +264,5 @@ h3 + .image-row img {
     h3 + .image-row {
         flex-wrap: nowrap; /* Отключаем перенос строк */
     }
+    
 }
