@@ -225,9 +225,9 @@ h3 + .image-row img {
         font-size: 1.7rem;
     }
     h3 + .image-row {
-        flex-wrap: nowrap; /* Отключаем перенос строк */
+        flex-direction: column; /* Располагаем изображения вертикально */
+        gap: 10px; /* Уменьшаем отступы */
     }
-
 }
 
 @media (min-width: 1200px) {
