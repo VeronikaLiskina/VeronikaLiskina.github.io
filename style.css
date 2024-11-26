@@ -177,6 +177,7 @@ h3 + .image-row img {
         max-width: 30px;
         margin-right: 0; /* Убираем отступ */
         margin-bottom: 10px; /* Добавляем отступ снизу */
+        display: none !important;
     }
 
     .container p {
@@ -213,6 +214,7 @@ h3 + .image-row img {
     }
     div.logo {
         max-width: 40px;
+        display: none !important;
     }
 
     .image-row img {
@@ -243,8 +245,8 @@ h3 + .image-row img {
     }
     div.logo {
         max-width: 80px;
+        display: none !important;
     }
-     
     .container {
         gap: 20px;
     }
@@ -279,7 +281,7 @@ h3 + .image-row img {
     div.logo {
         max-width: 150px; /* Средний размер логотипа */
     }
-
+    
     .intro,
     blockquote {
         font-size: 2.4rem;
