@@ -8,7 +8,7 @@ body {
     font-size: clamp(16px, 2vw, 24px); /* Адаптивный размер текста */
 }
 header {
-    background: linear-gradient(135deg, #f5e1f5, #e0cce0); /* Более плавный градиент */
+    background-color: #e0cce0;
     color: #4e245b;
     padding: 30px 20px; /* Больше пространства */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Легкая тень */
@@ -38,7 +38,7 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 10px 0 0;
-    flex-wrap: wrap; /* Для адаптации */
+    flex-wrap: wrap; 
 }
 
 
@@ -54,7 +54,7 @@ nav ul li a {
     transition: color 0.3s ease, transform 0.3s ease;
 }
 nav ul li a:hover {
-    background-color: #e9cce8; /* Акцент при наведении */
+    background-color: #e0cce0;
     color: #fff;
     transform: scale(1.05); 
 }
@@ -107,12 +107,14 @@ figure {
     border-bottom: 3px solid #e9cce8;
     padding-bottom: 5px;
     margin-bottom: 16px;
+    text-align: center;
 }
 
 .container h3 {
     color: #e9cce8;
     font: 700 clamp(1.4rem, 2vw, 2rem) 'Oswald', sans-serif;
     margin-bottom: 12px;
+    text-align: center;
 }
 
 .container p {
@@ -126,10 +128,6 @@ figure {
     border-radius: 8px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
     transition: transform 0.3s ease; 
-}
-
-.image-row img:hover {
-    transform: scale(1.03); 
 }
 
 footer {
