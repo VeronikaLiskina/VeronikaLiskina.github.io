@@ -7,20 +7,28 @@ body {
     padding: 0;
     font-size: clamp(16px, 2vw, 24px); /* Адаптивный размер текста */
 }
-
-/* Header */
 header {
     background: linear-gradient(135deg, #f5e1f5, #e0cce0); /* Более плавный градиент */
     color: #4e245b;
     padding: 30px 20px; /* Больше пространства */
-    text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Легкая тень */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
+/* Header */
+.elements {
+    flex-grow: 1;
+    text-align: center;
+
+}
+
 
 header h1 {
     margin: 0;
     font: 700 clamp(1.5rem, 5vw, 3rem)/1 'Oswald', sans-serif;
     text-transform: uppercase;
+    text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -53,6 +61,17 @@ nav ul li a:hover {
 main {
     padding: 20px;
 }
+
+div.logo {
+    flex-shrink: 0; /* Логотип не сжимается */
+    max-width: 15vw; /* Максимальная ширина зависит от ширины экрана */
+    min-width: 80px; /* Минимальный размер для маленьких экранов */
+    height: auto;
+    margin-right: 20px; /* Отступ справа */
+    transition: max-width 0.3s ease; /* Плавный переход размера */
+}
+
+
 
 .intro,
 blockquote {
@@ -100,7 +119,7 @@ figure {
     margin: 10px 0;
 }
 
-section img {
+.image-row img {
     width: 100%;
     max-width: 100%;
     height: auto;
@@ -109,7 +128,7 @@ section img {
     transition: transform 0.3s ease; 
 }
 
-section img:hover {
+.image-row img:hover {
     transform: scale(1.03); 
 }
 
@@ -154,6 +173,11 @@ h3 + .image-row img {
     header h1 {
         font-size: 1.8rem;
     }
+    header .logo {
+        max-width: 90px; /* Уменьшаем размер логотипа */
+        margin-right: 0; /* Убираем отступ */
+        margin-bottom: 10px; /* Добавляем отступ снизу */
+    }
 
     .container p {
         font-size: 1.1rem;
@@ -187,6 +211,9 @@ h3 + .image-row img {
     .container {
         display:inline-block;/* Убираем grid */
     }
+    div.logo {
+        max-width: 60px;
+    }
 
     .image-row img {
         width: 100%;
@@ -214,7 +241,10 @@ h3 + .image-row img {
     section img {
         max-width: 100%; /* Изображения не выходят за пределы контейнера */
     }
-
+    div.logo {
+        max-width: 80px;
+    }
+     
     .container {
         gap: 20px;
     }
@@ -245,6 +275,9 @@ h3 + .image-row img {
 @media (min-width: 1200px) {
     main {
         padding: 100px;
+    }
+    header .logo {
+        max-width: 150px; /* Средний размер логотипа */
     }
 
     .intro,
@@ -288,6 +321,10 @@ h3 + .image-row img {
     nav ul li a {
         font-size: 2.9rem;
         padding-right:15px;
+    }
+    header .logo {
+        max-width: 180px; /* Средний размер логотипа */
+
     }
 
     .container {
