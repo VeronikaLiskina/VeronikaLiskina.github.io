@@ -193,7 +193,9 @@ h3 + .image-row img {
     .container {
         display: inline-block; 
     }
-
+    div.logo {
+        max-width: 50px;
+    }
     .image-row img {
         width: 100%;
         height: auto;
