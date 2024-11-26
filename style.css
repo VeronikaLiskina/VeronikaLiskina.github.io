@@ -232,9 +232,7 @@ h3 + .image-row img {
 }
 
 @media (min-width: 769px) and (max-width: 1199px) {
-    section img {
-        max-width: 100%;
-    }
+
     div.logo {
         max-width: 80px;
         display: none !important;
