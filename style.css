@@ -1,22 +1,21 @@
 body {
     font-family: 'Times New Roman', Georgia, serif;
     line-height: 1.6;
-    color: #333;
     background-color: #f9f7f1;
     margin: 0;
     padding: 0;
-    font-size: clamp(16px, 2vw, 24px); /* Адаптивный размер текста */
+    font-size: clamp(16px, 2vw, 24px);
 }
 header {
     background-color: #e0cce0;
     color: #4e245b;
-    padding: 30px 20px; /* Больше пространства */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Легкая тень */
+    padding: 30px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
-/* Header */
+
 .elements {
     flex-grow: 1;
     text-align: center;
@@ -63,12 +62,11 @@ main {
 }
 
 div.logo {
-    flex-shrink: 0; /* Логотип не сжимается */
-    max-width: 15vw; /* Максимальная ширина зависит от ширины экрана */
-    min-width: 80px; /* Минимальный размер для маленьких экранов */
+    flex-shrink: 0;
+    min-width: 80px;
     height: auto;
-    margin-right: 20px; /* Отступ справа */
-    transition: max-width 0.3s ease; /* Плавный переход размера */
+    margin-right: 20px;
+    transition: max-width 0.3s ease;
 }
 
 
@@ -88,7 +86,7 @@ blockquote {
 .container {
     display: inline-block; 
     gap: 20px;
-    justify-items: center; /* Центрирование контента внутри ячеек */
+    justify-items: center; 
 }
 
 figure {
@@ -122,12 +120,9 @@ figure {
 }
 
 .image-row img {
-    width: 100%;
-    max-width: 100%;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
-    transition: transform 0.3s ease; 
 }
 
 footer {
@@ -145,8 +140,7 @@ footer p {
 
 
 h3 + .image-row img {
-    flex: 1 1 auto; /* Адаптивная ширина изображений */
-    max-width: 100%; /* Изображения не превышают ширину контейнера */
+    max-width: 100%;
     height: auto; 
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -173,8 +167,8 @@ h3 + .image-row img {
     }
     div.logo {
         max-width: 30px;
-        margin-right: 0; /* Убираем отступ */
-        margin-bottom: 10px; /* Добавляем отступ снизу */
+        margin-right: 0;
+        margin-bottom: 10px;
         display: none !important;
     }
 
@@ -186,8 +180,8 @@ h3 + .image-row img {
         font-size: 1rem;
     }
     h3 + .image-row {
-        flex-direction: column; /* Располагаем изображения вертикально */
-        gap: 8px; /* Уменьшаем отступы */
+        flex-direction: column;
+        gap: 8px;
     }
     .container {
         display: inline-block; 
@@ -208,7 +202,7 @@ h3 + .image-row img {
         font-size: 1.5rem;
     }
     .container {
-        display:inline-block;/* Убираем grid */
+        display:inline-block;
     }
     div.logo {
         max-width: 40px;
@@ -232,14 +226,14 @@ h3 + .image-row img {
         max-width: 90%;
     }
     h3 + .image-row {
-        flex-direction: column; /* Располагаем изображения вертикально */
-        gap: 10px; /* Уменьшаем отступы */
+        flex-direction: column;
+        gap: 10px; 
     }
 }
 
 @media (min-width: 769px) and (max-width: 1199px) {
     section img {
-        max-width: 100%; /* Изображения не выходят за пределы контейнера */
+        max-width: 100%;
     }
     div.logo {
         max-width: 80px;
@@ -250,12 +244,12 @@ h3 + .image-row img {
     }
 
     .container p {
-        font-size: 1.6rem; /* Размер шрифта для среднего экрана */
+        font-size: 1.6rem;
     }
 
     .intro,
     blockquote {
-        font-size: 1.7rem; /* Размер шрифта для блоков */
+        font-size: 1.7rem;
     }
 
     nav ul li a {
@@ -266,8 +260,8 @@ h3 + .image-row img {
     }
 
     h3 + .image-row {
-        flex-direction: row; /* Картинки в ряд, если есть достаточно места */
-        gap: 15px; /* Отступы между изображениями */
+        flex-direction: row; 
+        gap: 15px; 
     }
 }
 
@@ -277,7 +271,7 @@ h3 + .image-row img {
         padding: 100px;
     }
     div.logo {
-        max-width: 150px; /* Средний размер логотипа */
+        max-width: 150px; 
     }
     
     .intro,
@@ -323,7 +317,7 @@ h3 + .image-row img {
         padding-right:15px;
     }
     header .logo {
-        max-width: 180px; /* Средний размер логотипа */
+        max-width: 180px;
 
     }
 
