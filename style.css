@@ -231,6 +231,9 @@ h3 + .image-row img {
     nav ul li a {
         font-size: 1.7rem;
     }
+    footer{
+        font-size: 1.7rem;
+    }
 
     h3 + .image-row {
         flex-direction: row; /* Картинки в ряд, если есть достаточно места */
