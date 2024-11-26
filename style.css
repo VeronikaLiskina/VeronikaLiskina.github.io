@@ -240,7 +240,7 @@ h3 + .image-row img {
 
 @media (min-width: 1200px) {
     main {
-        padding: 80px;
+        padding: 40px;
     }
 
     .intro,
