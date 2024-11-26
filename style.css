@@ -174,7 +174,7 @@ h3 + .image-row img {
         font-size: 1.8rem;
     }
     div.logo {
-        max-width: 50px;
+        max-width: 30px;
         margin-right: 0; /* Убираем отступ */
         margin-bottom: 10px; /* Добавляем отступ снизу */
     }
@@ -212,7 +212,7 @@ h3 + .image-row img {
         display:inline-block;/* Убираем grid */
     }
     div.logo {
-        max-width: 60px;
+        max-width: 40px;
     }
 
     .image-row img {
