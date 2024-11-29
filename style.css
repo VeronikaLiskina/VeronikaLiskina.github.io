@@ -125,7 +125,7 @@ figure {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
 }
 
-footer {
+footer.contact_info {
     background: linear-gradient(135deg, #d8a0d6, #e9cce8);
     color: #fff;
     text-align: center;
